@@ -1,6 +1,8 @@
-body {
-    margin: 0;
-}
+body {margin: 0;}
+
+/*
+======================= Header Section ==========================
+*/
 
 header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -51,3 +53,19 @@ header {
 
 .headerbar > h2{color: rgb(80, 80, 80);}
 .headerbar > p{color: rgb(97, 97, 97);}
+
+/*
+======================= Main Section ==========================
+*/
+
+.contact_us{
+
+}
+
+.home_photo{
+    width: 32rem;
+}
+
+/*
+======================= Footer Section ==========================
+*/
