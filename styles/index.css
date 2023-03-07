@@ -1,11 +1,10 @@
-body {margin: 0;}
+body {margin: 0; font-family: sans-serif;}
 
 /*
 ======================= Header Section ==========================
 */
 
 header {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
 }
