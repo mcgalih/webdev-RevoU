@@ -12,7 +12,7 @@ header {
 .navbar{
     box-sizing: border-box;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     background-color: white;
     border: 2px solid #ffbf00;
@@ -24,6 +24,7 @@ header {
 
 .navbar > nav {
     border: 2px solid #ffbf00;
+    border-radius: 7px;
     display: flex;
     flex-direction: row;
     gap: 2px;
@@ -35,12 +36,21 @@ header {
 }
 
 .navbar > nav > a {
-    color: rgb(56, 56, 56);;
+    color: rgb(56, 56, 56);
     background-color: white;
     width: 100%;
     text-align: center;
     padding: 5px 0px;
     text-decoration: none;
+}
+
+#nav_left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#nav_right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .navbar > nav > a:hover {background-color: whitesmoke;}
@@ -49,7 +59,7 @@ header {
 
 .headerbar {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
