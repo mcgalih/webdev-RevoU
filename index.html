@@ -4,6 +4,7 @@
 
 <head>
     <link rel="stylesheet" href="styles/index.css">
+    <title>Torrent the Spirit Horse</title>
 </head>
 
 <body id="home">
@@ -33,7 +34,7 @@
                     <p id="melina_text">Melina will contact you 1x24 hours after we receive the data.</p>
                     
                 </div>
-                    <Form>
+                    <Form name="val_form" onsubmit="return validateForm()">
                         <label for="username">Your Name:</label>
                         <input type="text" id="username" name="username" placeholder="First and Last Name">
                         <br>
@@ -45,20 +46,42 @@
                         <label for="stat_build">What are you interested in?</label>
                         <select id="stat_build" name="stat_build" required>
                             <option value="" disabled selected hidden>Select Build</option>
-                            <option value="dex">DEX Build</option>
-                            <option value="str">STR Build</option>
-                            <option value="int">INT Build</option>
-                            <option value="faith">Faith Build</option>
+                            <option value="DEX build">DEX Build</option>
+                            <option value="STR build">STR Build</option>
+                            <option value="INT build">INT Build</option>
+                            <option value="FAITH build">FAITH Build</option>
                         </select>
                         <br>
-                        <input type="submit" value="SEND">
+                        <input type="submit" value="submit">
                     </Form>
+                    <script>
+                        function validateForm(){
+                            var name = document.forms["val_form"]["username"].value;
+                            var email = document.forms["val_form"]["useremail"].value;
+                            var build = document.forms["val_form"]["stat_build"].value;
+
+                            if(name == "" || email == "" || build ==""){
+                                alert("gak boleh kosong bray");
+                                return false;
+                            }
+
+                            document.getElementById("out_name").innerHTML = name;
+                            document.getElementById("out_email").innerHTML = email;
+                            document.getElementById("out_build").innerHTML = build;
+
+                            return false;                         
+                        }
+                    </script>
                 </div>
             </div>
 
         </div>
         <div id="our_package">
             <h1>Our Package</h1>
+            Nama: <span id="out_name"></span><br>
+            Email: <span id="out_email"></span><br>
+            build: <span id="out_build"></span><br>
+
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate tenetur assumenda quod, illum quia hic architecto dolorum dolore labore porro suscipit quae unde repudiandae minus quidem iusto natus officia placeat.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos beatae ad ratione corrupti quo fugit numquam facere quis perferendis in commodi dolore provident soluta quia id, rerum ab nemo minima.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor exercitationem magni eligendi quas sit assumenda fugiat sunt dignissimos totam, neque eum impedit! Culpa recusandae cupiditate dolore sint animi dolor sit!
