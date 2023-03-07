@@ -15,21 +15,45 @@
             <a href="#call_us" id="nav_right">Call Us</a>
         </nav>
     </div>
-    <header class="headerbar">
+    <header>
         <h2>Your Best Travel Companion's</h2>
         <p>explore the beautiful world of "<i>Lands Between</i>"</p>
     </header>
 
     <main>
-        <div>
-            <div class="contact_us">
-                Contact us
-            </div>
-    
-            <div>
+        <div class="home_page">
+            <div class="review">
                 <img class="home_photo" src="images/riding-torrent.jpg">
                 <i>"Taming a dragon while riding my torrent, one of the best moment in my life !"</i>
     
+            </div>
+            <div class="contact_us">
+                <div>
+                    <p id="contact_us_text"><b>Contact Us</b><p>
+                    <p id="melina_text">Melina will contact you 1x24 hours after we receive the data</p>
+                    
+                </div>
+                    <Form>
+                        <label for="username">Your Name:</label>
+                        <input type="text" id="username" name="username" placeholder="First and Last Name" value="username">
+                        <br>
+
+                        <label for="useremail">Email Adress:</label>
+                        <input type="text" id="useremail" name="useremail" placeholder="example@email.com" value="useremail">
+                        <br>
+
+                        <label for="stat_build">What are you interested in?</label>
+                        <select id="stat_build" name="stat_build" required>
+                            <option value="" disabled selected hidden>Select Build</option>
+                            <option value="dex">DEX Build</option>
+                            <option value="str">STR Build</option>
+                            <option value="int">INT Build</option>
+                            <option value="faith">Faith Build</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="SEND">
+                    </Form>
+                </div>
             </div>
 
         </div>
