@@ -9,7 +9,7 @@ header {
     flex-direction: column;
 }
 
-.navbar{
+#navbar{
     box-sizing: border-box;
     width: 100%;
     position: sticky;
@@ -20,9 +20,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: top 0.2s;
 }
 
-.navbar > nav {
+#navbar > nav {
     border: 2px solid #ffbf00;
     border-radius: 7px;
     display: flex;
@@ -35,7 +36,7 @@ header {
     justify-content: space-evenly;
 }
 
-.navbar > nav > a {
+#navbar > nav > a {
     color: rgb(56, 56, 56);
     background-color: white;
     width: 100%;
@@ -53,7 +54,7 @@ header {
     border-bottom-right-radius: 5px;
 }
 
-.navbar > nav > a:hover {background-color: whitesmoke;}
+#navbar > nav > a:hover {background-color: whitesmoke;}
 
 .logo{width: 150px;}
 
