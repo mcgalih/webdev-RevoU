@@ -99,6 +99,17 @@ header > p{color: rgb(97, 97, 97);}
 .banner{
     display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.banner > button {
+    font-size: medium;
+    background-color: #ffd558;
+    font-weight: bold;
+    height: 40%;
+    width: 10%;
+    border-radius: 10px;
 }
 
 .profile > span {
