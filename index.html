@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="icon" href="images/logo1.svg">
     <title>Torrent the Spirit Steed</title>
 </head>
@@ -40,7 +40,7 @@
                     <span><i>"Taming a dragon while riding my torrent, the best moment in my life !"</i></span>
                     <div class="user">
                         <img id="user_pp" src="images/profile_pic.jpg">
-                        <div>
+                        <div class="user_data">
                             <b>Tarnished</b><br>
                             <i>Warrior, 30</i>
                         </div>
@@ -50,10 +50,10 @@
             </div>
             <div class="contact_us">
                 <div>
-                    <p id="contact_us_text"><b>Contact Us</b><p>
+                    <p id="contact_us_text"><b>Contact Us</b>
                     <p id="melina_text">Melina will contact you 1x24 hours after we receive the data.</p>
-                    
                 </div>
+                <div>
                     <Form name="val_form" onsubmit="return validateForm()">
                         <label for="username">Your Name:</label>
                         <input type="text" id="username" name="username" placeholder="First and Last Name">
@@ -63,13 +63,15 @@
                         <input type="text" id="useremail" name="useremail" placeholder="example@email.com">
                         <br>
 
-                        <label for="stat_build">What are you interested in?</label>
-                        <select id="stat_build" name="stat_build" required>
-                            <option value="" disabled selected hidden>Select Build</option>
-                            <option value="DEX build">DEX Build</option>
-                            <option value="STR build">STR Build</option>
-                            <option value="INT build">INT Build</option>
-                            <option value="FAITH build">FAITH Build</option>
+                        <label for="place_option">What are you interested in?</label>
+                        <select id="place_option" name="place_option" required>
+                            <option value="" disabled selected hidden>Select Options</option>
+                            <option value="Stormveil Castle">Stormveil Castle</option>
+                            <option value="Raya Lucaria Academy">Raya Lucaria Academy</option>
+                            <option value="Caelid">Caelid</option>
+                            <option value="Volcano Manor">Volcano Manor</option>
+                            <option value="Crumbling Farum Azula">Crumbling Farum Azula</option>
+                            <option value="Limgrave">Limgrave</option>
                         </select>
                         <br>
                         <input type="submit" value="SEND">
@@ -83,7 +85,7 @@
             <h1>Our Package</h1>
             Nama: <span id="out_name"></span><br>
             Email: <span id="out_email"></span><br>
-            build: <span id="out_build"></span><br>
+            build: <span id="out_place"></span><br>
 
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate tenetur assumenda quod, illum quia hic architecto dolorum dolore labore porro suscipit quae unde repudiandae minus quidem iusto natus officia placeat.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos beatae ad ratione corrupti quo fugit numquam facere quis perferendis in commodi dolore provident soluta quia id, rerum ab nemo minima.

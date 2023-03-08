@@ -93,7 +93,8 @@ header > p{color: rgb(97, 97, 97);}
 .profile{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem 5rem;
+    box-sizing: border-box;
 }
 
 .banner{
@@ -113,17 +114,24 @@ header > p{color: rgb(97, 97, 97);}
 }
 
 .profile > span {
+    color: rgb(97, 97, 97);
     text-align: left;
 }
 
 .user{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin: 1rem 0rem;
 }
+
+.user_data{margin-left: 2rem;}
+.user_data > i {color: rgb(97, 97, 97);}
+.user_data > b {color: rgb(80, 80, 80);}
 
 #user_pp{
     border-radius: 50%;
-    width: 100px;
+    width: 4rem;
 }
 
 .contact_us{

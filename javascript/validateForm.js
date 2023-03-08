@@ -1,7 +1,7 @@
 function validateForm(){
     var name = document.forms["val_form"]["username"].value;
     var email = document.forms["val_form"]["useremail"].value;
-    var build = document.forms["val_form"]["stat_build"].value;
+    var place = document.forms["val_form"]["place_option"].value;
 
     if(name == "" && email == ""){
         blankname();
@@ -22,7 +22,11 @@ function validateForm(){
 
     document.getElementById("out_name").innerHTML = name;
     document.getElementById("out_email").innerHTML = email;
-    document.getElementById("out_build").innerHTML = build;
+    document.getElementById("out_place").innerHTML = place;
+
+    alert("Hello " + name +
+    ", check " + email + " inbox for more informations. Enjoy your trip to "
+    + place + " !!");
 
     return false;                         
 }
