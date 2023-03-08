@@ -207,7 +207,7 @@ form > label{
 #empty_name, #empty_email, #empty_place{
     width: 100%;
     color: red;
-    display: block;
+    display: none;
 }
 
 input[type=text], select {
