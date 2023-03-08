@@ -17,6 +17,7 @@
             <a href="#call_us" id="nav_right">Call Us</a>
         </nav>
     </div>
+    <script src="javascript/navbarScrolling.js"></script>
     <header>
         <h2>Your Best Travel Companion's</h2>
         <p>Explore the beautiful world of "Lands Between" with a Torrent, the Spirit Steed !</p>
@@ -62,42 +63,7 @@
                         <br>
                         <input type="submit" value="SEND">
                     </Form>
-                    <script>
-                        function validateForm(){
-                            var name = document.forms["val_form"]["username"].value;
-                            var email = document.forms["val_form"]["useremail"].value;
-                            var build = document.forms["val_form"]["stat_build"].value;
-
-                            if(name == "" && email == ""){
-                                blankname();
-                                blankemail();
-                                return false;
-                            } else if(name == ""){
-                                blankname();
-                                return false;
-                            } else if(email == ""){
-                                blankemail();
-                                return false;
-                            } else{
-                                document.getElementById("username").style.borderColor = "";
-                                document.getElementById("useremail").style.borderColor = "";
-                            }
-
-                            document.getElementById("out_name").innerHTML = name;
-                            document.getElementById("out_email").innerHTML = email;
-                            document.getElementById("out_build").innerHTML = build;
-
-                            return false;                         
-                        }
-                        function blankemail(){
-                            document.getElementById("useremail").style.borderColor = "#ff0000";
-                            document.getElementById("useremail").placeholder = "please fill in your email";
-                        }
-                        function blankname(){
-                            document.getElementById("username").style.borderColor = "#ff0000";
-                            document.getElementById("username").placeholder = "please fill in your name";
-                        }
-                    </script>
+                    <script src="javascript/validateForm.js"></script>
                 </div>
             </div>
 
@@ -155,19 +121,6 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusantium sed iste officia eligendi nam rerum reprehenderit beatae illum nesciunt, distinctio inventore! Itaque mollitia aut voluptatem? Magnam voluptate fugit laudantium!
 
     </footer>
-
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-100%";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-    </script>
 </body>
 
 </html>
