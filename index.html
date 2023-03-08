@@ -53,7 +53,7 @@
                         <div id="features_item">
                             <div id="item_number"><b>1</b></div>
                             <div id="item_text">
-                                You will get a "Spectral Steed Whistle" with the size of finger ring, use this to summon our Torrent.
+                                You will get a "Spectral Steed Whistle" that looks like a finger ring, use this to summon our Torrent.
                             </div>
                         </div>
                         <div id="features_item">
@@ -79,15 +79,15 @@
                 <div>
                     <Form name="val_form" onsubmit="return validateForm()">
                         <label for="username">Your Name:</label>
-                        <input type="text" id="username" name="username" placeholder="First and Last Name">
+                        <input type="text" id="username" name="username" placeholder="First and Last Name" onclick="style_reset_name()">
                         <br>
 
                         <label for="useremail">Email Adress:</label>
-                        <input type="text" id="useremail" name="useremail" placeholder="example@email.com">
+                        <input type="text" id="useremail" name="useremail" placeholder="example@email.com" onclick="style_reset_email()">
                         <br>
 
                         <label for="place_option">What are you interested in?</label>
-                        <select id="place_option" name="place_option" required>
+                        <select id="place_option" name="place_option" onclick="style_reset_place()">
                             <option value="" disabled selected hidden>Select Options</option>
                             <option value="Stormveil Castle">Stormveil Castle</option>
                             <option value="Raya Lucaria Academy">Raya Lucaria Academy</option>

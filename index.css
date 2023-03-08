@@ -156,7 +156,6 @@ header > p{color: rgb(97, 97, 97);}
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    box-sizing: border-box;
 }
 
 #features_item{
@@ -181,7 +180,6 @@ header > p{color: rgb(97, 97, 97);}
 #item_text{
     width: 85%;
     text-align: left;
-    box-sizing: border-box;
 }
 
 .contact_us{
