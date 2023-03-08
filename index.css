@@ -90,6 +90,13 @@ header > p{color: rgb(97, 97, 97);}
     width: 100%;
 }
 
+.line{
+    align-self: center;
+    height: 0.2rem;
+    width: 30%;
+    background-color: rgb(97, 97, 97);
+}
+
 .profile{
     display: flex;
     flex-direction: column;
