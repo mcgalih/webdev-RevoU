@@ -64,7 +64,7 @@ header > p{color: rgb(97, 97, 97);}
 
 #navbar > nav > a:hover {background-color: whitesmoke;}
 
-.logo{width: 150px;}
+.logo{width: 160px;}
 
 /*
 ======================= Main Section ==========================
@@ -81,8 +81,24 @@ header > p{color: rgb(97, 97, 97);}
 }
 
 .review {
-    width: 50%;
+    width: 45%;
     box-sizing: border-box;
+}
+
+.review > p {
+    padding: 0 1.5rem;
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.home_photo{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.user_profile{
+    display: flex;
+    flex-direction: row;
 }
 
 .contact_us{
@@ -91,6 +107,7 @@ header > p{color: rgb(97, 97, 97);}
     background-color: #ffd558;
     box-sizing: border-box;
     padding: 3rem;
+    height: max-content;
 }
 
 #contact_us_text{font-size: 1rem;}
@@ -100,6 +117,7 @@ header > p{color: rgb(97, 97, 97);}
 }
 form{margin-top: 2rem; display: block;}
 form > label{
+    display: block;
     font-size: 0.8rem;
     font-weight: bold;
 }
@@ -108,7 +126,7 @@ input[type=text], select {
     padding: 1rem;
     width: 100%;
     display: block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -117,7 +135,7 @@ input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
+    padding: 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -125,11 +143,6 @@ input[type=submit] {
   
 input[type=submit]:hover {
     background-color: #45a049;
-}
-
-.home_photo{
-    border-radius: 0.5rem;
-    width: 40rem;
 }
 
 /*
