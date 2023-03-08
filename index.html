@@ -80,11 +80,11 @@
                     <Form name="val_form" onsubmit="return validateForm()">
                         <label for="username">Your Name:</label>
                         <input type="text" id="username" name="username" placeholder="First and Last Name" onclick="style_reset_name()">
-                        <br>
+                        <span id="empty_name">Please input your name</span><br>
 
                         <label for="useremail">Email Adress:</label>
                         <input type="text" id="useremail" name="useremail" placeholder="example@email.com" onclick="style_reset_email()">
-                        <br>
+                        <span id="empty_email">Please input your email</span><br>
 
                         <label for="place_option">What are you interested in?</label>
                         <select id="place_option" name="place_option" onclick="style_reset_place()">
@@ -96,6 +96,7 @@
                             <option value="Crumbling Farum Azula">Crumbling Farum Azula</option>
                             <option value="Limgrave">Limgrave</option>
                         </select>
+                        <span id="empty_place">Please input your destination</span><br>
                         <br>
                         <input type="submit" value="SEND">
                     </Form>

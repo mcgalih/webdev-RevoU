@@ -199,8 +199,15 @@ header > p{color: rgb(97, 97, 97);}
 form{margin-top: 2rem; display: block;}
 form > label{
     display: block;
+    width: 100%;
     font-size: 1rem;
     font-weight: bold;
+}
+
+#empty_name, #empty_email, #empty_place{
+    width: 100%;
+    color: red;
+    display: block;
 }
 
 input[type=text], select {

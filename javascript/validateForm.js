@@ -52,7 +52,6 @@ function validateForm(){
         style_reset_email();
         style_reset_place();
     }
-
     document.getElementById("out_name").innerHTML = name;
     document.getElementById("out_email").innerHTML = email;
     document.getElementById("out_place").innerHTML = place;
@@ -64,34 +63,29 @@ function validateForm(){
     return false;                         
 }
 function blankname(){
-    document.getElementById("username").style.color = "red";
     document.getElementById("username").style.borderColor = "red";
-    document.getElementById("username").style.fontWeight = "bold";
-    document.getElementById("username").placeholder = "please fill in your name";
+    document.getElementById("empty_name").style.display = "block";
 }
 function style_reset_name(){
     document.getElementById("username").style.borderColor = "";
-    document.getElementById("username").style.color = "";
-    document.getElementById("username").style.fontWeight = "";
+    document.getElementById("empty_name").style.display = "none";
+    
 }
 function blankemail(){
-    document.getElementById("useremail").style.color = "red";
     document.getElementById("useremail").style.borderColor = "red";
-    document.getElementById("useremail").style.fontWeight = "bold";
-    document.getElementById("useremail").placeholder = "please fill in your email";
+    document.getElementById("empty_email").style.display = "block";
 }
 function style_reset_email(){
     document.getElementById("useremail").style.borderColor = "";
-    document.getElementById("useremail").style.color = "";
-    document.getElementById("useremail").style.fontWeight = "";
+    document.getElementById("empty_email").style.display = "none";
 }
 
 function blankPlace(){
-    document.getElementById("place_option").style.color = "red";
     document.getElementById("place_option").style.borderColor = "red";
+    document.getElementById("empty_place").style.display = "block";
 }
 
 function style_reset_place(){
-    document.getElementById("place_option").style.color = "";
     document.getElementById("place_option").style.borderColor = "";
+    document.getElementById("empty_place").style.display = "none";
 }
