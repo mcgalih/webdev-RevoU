@@ -113,7 +113,7 @@ header > p{color: rgb(97, 97, 97);}
 
 .banner > button {
     font-size: medium;
-    background-color: #ffd558;
+    background-color: #fdde80;
     font-weight: bold;
     height: 40%;
     width: 10%;
@@ -145,7 +145,7 @@ header > p{color: rgb(97, 97, 97);}
     align-self: center;
     height: 0.2rem;
     width: 30%;
-    background-color: rgb(97, 97, 97);
+    background-color: #fdde80;
 }
 .features_box{
     box-sizing: border-box;
@@ -179,7 +179,7 @@ header > p{color: rgb(97, 97, 97);}
     align-items: center;
     width: 3rem;
     height: 3rem;
-    background-color: #ffd558;
+    background-color: #fdde80;
     text-align: center;
     border-radius: 50%;
 }
@@ -192,7 +192,7 @@ header > p{color: rgb(97, 97, 97);}
 .contact_us{
     border-radius: 0.5rem;
     width: 30%;
-    background-color: #ffd558;
+    background-color: #fdde80;
     box-sizing: border-box;
     padding: 3rem;
     height: max-content;
@@ -297,8 +297,43 @@ input[type=submit]:hover {
 .place_desc{
     text-align: justify;
     color: rgb(97, 97, 97);
-} 
+}
+
+/* ========================= call us =============================== */
+
+.call_us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-top: 3px solid #fdde80;
+    border-bottom: 3px solid #fdde80;
+    padding: 50px 0;
+}
+
+.call_us > h1{
+    color: rgb(80, 80, 80);
+    margin: 0;
+}
+
+.call_us > p{
+    color: rgb(97, 97, 97);
+    text-align: center;
+    padding: 0 300px;
+}
+
+.call_us > button{
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fdde80;
+}
+
 
 /*
+=================================================================
 ======================= Footer Section ==========================
+=================================================================
 */
