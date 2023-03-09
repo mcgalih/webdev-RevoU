@@ -106,7 +106,7 @@
 
         </div>
         <div class="our_package" id="our_package">
-            <h1 style="text-align: center;">Our Package</h1>
+            <h1>Our Package</h1>
             <div class="package_item">
 
                 <div class="place_container">
@@ -178,23 +178,27 @@
             </div>
         </div>
         <div class="call_us" id="call_us">
-            <h1 style="text-align: center;">Become an Elden Lord</h1>
+            <h1>Become an Elden Lord</h1>
             <p>Melina, and other former Tarnished, work together to guide you to the great world of "Lands Between".
                 A world for those who were blessed by Grace through the Elden Ring and the Erdtree. Find a Great Runes and become an Elden Lord !. 
             </p>
-            <button>Call Melina</button>
+            <button onclick="call()">Call Melina</button>
+            <script>
+                function call(){
+                    alert("contact Melina...");
+                }
+            </script>
 
         </div>
     </main>
 
     <footer>
-        <h1>Footer</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex, quibusdam culpa aut cupiditate expedita dolor ullam illo eius, nobis, rem officiis corrupti ducimus magni ab quidem labore enim. Minus?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum vitae architecto cupiditate, voluptatum, distinctio consectetur nihil fuga voluptatibus, impedit alias expedita. Animi inventore officia aliquam, nam commodi eius modi mollitia!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum eos vero facere veniam maxime nam non, porro repellendus beatae nobis inventore eum, quod quisquam nostrum perferendis. Quo, odit reprehenderit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum aliquid mollitia, distinctio quia architecto ducimus officia blanditiis sapiente vero, exercitationem quae qui. Incidunt dolores amet, odio earum voluptatem qui.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusantium sed iste officia eligendi nam rerum reprehenderit beatae illum nesciunt, distinctio inventore! Itaque mollitia aut voluptatem? Magnam voluptate fugit laudantium!
-
+        <img src="images/logo2.svg">
+        <div class="footer_link">
+            <a href="https://www.eldenring.jp/eula/w_en.html" class="link">Terms of Service</a>
+            <a href="https://www.eldenring.jp/eula/w_en.html" class="link">Privacy Policy</a>
+        </div>
+        <div id="copyright">&#169; 2023 Torrent</div>
     </footer>
 </body>
 
