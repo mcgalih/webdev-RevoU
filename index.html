@@ -10,7 +10,7 @@
 
 <body id="home">
     <div id ="navbar">
-        <img class ="logo" src="images/logo2.svg">
+        <img class ="logo" src="images/logo2.png">
         <nav>
             <a href="#home" id="nav_left">Home</a>
             <a href="#our_package">Our Package</a>
@@ -88,13 +88,15 @@
 
                         <label for="place_option">What are you interested in?</label>
                         <select id="place_option" name="place_option" onclick="style_reset_place()">
-                            <option value="" disabled selected hidden>Select Options</option>
-                            <option value="Limgrave">Limgrave</option>
-                            <option value="Caelid">Caelid</option>
-                            <option value="Altus Plateau">Altus Plateau</option>
-                            <option value="Liurna of the Lakes">Liurna of the Lakes</option>
-                            <option value="Mt. Gelmir">Mt. Gelmir</option>
-                            <option value="Mountaintops of the Giants">Mountaintops of the Giants</option>
+                            <optgroup>
+                                <option value="" disabled selected>Select Options</option>
+                                <option value="Limgrave">Limgrave</option>
+                                <option value="Caelid">Caelid</option>
+                                <option value="Altus Plateau">Altus Plateau</option>
+                                <option value="Liurna of the Lakes">Liurna of the Lakes</option>
+                                <option value="Mt. Gelmir">Mt. Gelmir</option>
+                                <option value="Mountaintops of the Giants">Mountaintops of the Giants</option>
+                            </optgroup>
                         </select>
                         <span id="empty_place">Please input your destination</span><br>
                         <br>
@@ -193,7 +195,7 @@
     </main>
 
     <footer>
-        <img src="images/logo2.svg">
+        <img src="images/logo2.png">
         <div class="footer_link">
             <a href="https://www.eldenring.jp/eula/w_en.html" class="link">Terms of Service</a>
             <a href="https://www.eldenring.jp/eula/w_en.html" class="link">Privacy Policy</a>
