@@ -1,7 +1,9 @@
 body {margin: 0; font-family: sans-serif;}
 
 /*
+=================================================================
 ======================= Header Section ==========================
+=================================================================
 */
 
 header {
@@ -14,7 +16,7 @@ header {
     
 }
 
-header > h2{color: rgb(80, 80, 80);}
+header > h1{color: rgb(80, 80, 80);}
 header > p{color: rgb(97, 97, 97);}
 
 #navbar{
@@ -67,8 +69,13 @@ header > p{color: rgb(97, 97, 97);}
 .logo{width: 160px;}
 
 /*
-======================= Main Section ==========================
+=================================================================
+========================= Main Section ==========================
+=================================================================
 */
+
+/* =======================Home Page ===========================*/
+
 .home_page{
     display: flex;
     flex-direction: row;
@@ -235,6 +242,62 @@ input[type=submit]:hover {
     cursor: pointer;
     background-color: #45a049;
 }
+
+/* ====================== Our Package =========================*/
+
+.our_package{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+}
+
+.our_package > h1{
+    color: rgb(80, 80, 80);
+    background-color: #fdde80;
+    padding: 80px 0;
+    margin: 0;
+}
+
+.package_item{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+    margin: 45px;
+}
+
+.place_container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+.place_head, .place_foot{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.place_icon{
+    background-color: #fdde80;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.place_name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: center;
+    color: rgb(80, 80, 80);
+}
+
+.place_blank{
+    width: 50px;
+}
+
+.place_desc{
+    text-align: justify;
+    color: rgb(97, 97, 97);
+} 
 
 /*
 ======================= Footer Section ==========================
