@@ -377,3 +377,43 @@ footer > img{
     margin-bottom: 15px;
     width: 200px;
 }
+
+/* 
+=====================================================================
+=========================== Responsive Style ========================
+=====================================================================
+*/
+
+@media screen and (max-width: 1023px) {
+    .home_page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review {
+        width: 90%;
+    }
+
+    .banner > button {
+        height: 100px;
+        width: 90px;
+    }
+
+    .contact_us {
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .our_package > h1 {
+        padding: 50px 0;
+    }
+
+    .package_item {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 45px 60px;
+    }
+
+    .call_us > p {
+        padding: 0 100px;
+    }
+}
