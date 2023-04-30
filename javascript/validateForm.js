@@ -52,9 +52,9 @@ function validateForm(){
         style_reset_email();
         style_reset_place();
     }
-    document.getElementById("out_name").innerHTML = name;
+    /* document.getElementById("out_name").innerHTML = name;
     document.getElementById("out_email").innerHTML = email;
-    document.getElementById("out_place").innerHTML = place;
+    document.getElementById("out_place").innerHTML = place; */
 
     alert("Hello " + name +
     ", check " + email + " inbox for more informations. Enjoy your trip to "
